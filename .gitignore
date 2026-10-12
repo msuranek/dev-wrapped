@@ -1,0 +1,45 @@
+# Gradle, Kotlin, and IntelliJ Platform build state
+.gradle/
+.intellijPlatform/
+.kotlin/
+build/
+out/
+
+# IDE and editor-local files
+.idea/
+*.iml
+*.ipr
+*.iws
+*.swp
+*.swo
+*~
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Local configuration and environment files
+local.properties
+.env
+.env.*
+!.env.example
+secrets.properties
+credentials.properties
+
+# Signing keys, certificates, and credential stores
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Logs, crash dumps, and temporary output
+*.log
+logs/
+*.tmp
+*.temp
+hs_err_pid*
+replay_pid*

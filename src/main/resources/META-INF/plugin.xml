@@ -1,0 +1,22 @@
+<idea-plugin>
+    <id>com.devwrapped.jetbrains</id>
+    <name>Dev Wrapped</name>
+    <vendor>Dev Wrapped Contributors</vendor>
+
+    <description><![CDATA[
+      Discover your Developer DNA from local Git history and export a polished, anonymous share card.
+      All analysis happens locally. Dev Wrapped has no accounts, backend, telemetry, or uploads.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <actions>
+        <group id="DevWrapped.ToolsGroup" text="Dev Wrapped" popup="true">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+            <action id="DevWrapped.Generate"
+                    class="com.devwrapped.plugin.GenerateDevWrappedAction"
+                    text="Generate My Dev Wrapped"
+                    description="Create a Developer DNA card from local Git history"/>
+        </group>
+    </actions>
+</idea-plugin>
