@@ -1,7 +1,7 @@
-<idea-plugin>
+<idea-plugin url="https://github.com/msuranek/dev-wrapped">
     <id>com.devwrapped.jetbrains</id>
     <name>Dev Wrapped</name>
-    <vendor>Dev Wrapped Contributors</vendor>
+    <vendor url="https://github.com/msuranek/dev-wrapped">Dev Wrapped Contributors</vendor>
 
     <description><![CDATA[
       Discover your Developer DNA from local Git history and export a polished, anonymous share card.

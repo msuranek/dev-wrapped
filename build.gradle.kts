@@ -33,15 +33,12 @@ intellijPlatform {
         version = providers.gradleProperty("pluginVersion")
         ideaVersion { sinceBuild = "252" }
         description = providers.fileContents(layout.projectDirectory.file("MARKETPLACE.md")).asText
-        changeNotes = providers.fileContents(layout.projectDirectory.file("CHANGELOG.md")).asText
+        changeNotes = providers.fileContents(layout.projectDirectory.file("docs/MARKETPLACE_CHANGE_NOTES.html")).asText
     }
     pluginVerification {
         ides {
-            recommended()
-            select {
-                sinceBuild = "252"
-                untilBuild = "252.*"
-            }
+            current()
+            providers.environmentVariable("PHPSTORM_HOME").orNull?.let { local(it) }
         }
     }
     publishing { token = providers.environmentVariable("PUBLISH_TOKEN") }

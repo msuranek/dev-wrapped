@@ -18,7 +18,7 @@ jobs:
           java-version: 21
           cache: gradle
       - uses: gradle/actions/setup-gradle@v4
-      - run: ./gradlew test buildPlugin verifyPluginProjectConfiguration
+      - run: ./gradlew test buildPlugin verifyPluginProjectConfiguration verifyPlugin
       - uses: actions/upload-artifact@v4
         with:
           name: dev-wrapped-plugin

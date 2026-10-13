@@ -91,7 +91,7 @@ Common commands:
 ./gradlew runIde
 ```
 
-Run `./gradlew verifyPlugin` before release when the required IDE distributions can be downloaded. The full release process is documented in [docs/RELEASE_CHECKLIST.md](docs/RELEASE_CHECKLIST.md).
+`./gradlew verifyPlugin` checks the current IntelliJ IDEA target without downloading another IDE. To include an existing PhpStorm installation, set `PHPSTORM_HOME` to that installation before running the task. The full release process is documented in [docs/RELEASE_CHECKLIST.md](docs/RELEASE_CHECKLIST.md).
 
 ## Architecture
 

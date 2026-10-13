@@ -1,6 +1,6 @@
 <h2>Discover Your Developer DNA</h2>
 
-<p><strong>Your Git history has a personality. Discover yours.</strong></p>
+<p><strong>Discover Your Developer DNA.</strong></p>
 
 <p>Dev Wrapped is a free, open-source JetBrains IDE plugin that transforms local Git activity into a polished, shareable Developer DNA card. Choose a Git identity and reporting period, then discover a playful archetype based on patterns in your own commit history.</p>
 
@@ -30,3 +30,7 @@
 <h3>Disclaimer</h3>
 
 <p>Git activity is not a measure of time spent, productivity, skill, or impact. Developer DNA archetypes are deterministic, playful interpretations of commit patterns—not scientific assessments.</p>
+
+<h3>Open Source</h3>
+
+<p>Dev Wrapped is available under the MIT License. Source code and issue tracking are available at <a href="https://github.com/msuranek/dev-wrapped">github.com/msuranek/dev-wrapped</a>.</p>
