@@ -62,4 +62,12 @@ tasks {
         mainClass = "com.devwrapped.render.SampleCardGenerator"
         args(layout.projectDirectory.file("docs/dev-wrapped-preview.png").asFile.absolutePath)
     }
+    register<JavaExec>("generateArchetypeQaCards") {
+        group = "verification"
+        description = "Generates ignored sample cards for visual QA of every archetype."
+        dependsOn(testClasses)
+        classpath = sourceSets.test.get().runtimeClasspath
+        mainClass = "com.devwrapped.render.ArchetypeQaGenerator"
+        args(layout.buildDirectory.dir("visual-qa").get().asFile.absolutePath)
+    }
 }

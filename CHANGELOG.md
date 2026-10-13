@@ -6,8 +6,19 @@ The project follows the structure of [Keep a Changelog](https://keepachangelog.c
 
 ## [Unreleased]
 
+### Added
+
+- Archetype-specific vector artwork and decorative motifs for all six Developer DNA personalities.
+- A **Your Coding Superpower** achievement section with a distinct achievement for each archetype.
+- Deterministic achievement descriptions that incorporate available Git activity statistics, with fallbacks for missing or low-activity data.
+- Automated rendering checks for all six archetypes, long text, and the low-signal state.
+
 ### Changed
 
+- Refined share-card typography, layout, spacing, gradients, and metric labels while keeping the 1200 × 1500 export format.
+- Improved the lower portion of the card and replaced the generic DNA decoration with archetype-specific artwork.
+- Updated achievement copy to avoid repeating archetype subtitles and to describe commit activity without implying measured working hours or productivity.
+- Regenerated the README preview using fictional Midnight Architect sample data and the same renderer as the plugin.
 - Polished the README, Marketplace copy, changelog, and release checklist for the initial public GitHub launch.
 
 ## [0.1.2] — Development build
