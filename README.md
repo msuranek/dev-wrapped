@@ -4,6 +4,8 @@
 
 [![Build](https://github.com/msuranek/dev-wrapped/actions/workflows/build.yml/badge.svg)](https://github.com/msuranek/dev-wrapped/actions/workflows/build.yml)
 
+**Marketplace Beta:** [Dev Wrapped 0.1.2 on JetBrains Marketplace](https://plugins.jetbrains.com/plugin/35069-dev-wrapped)
+
 ## Your Git history has a personality. Discover yours.
 
 Dev Wrapped is a free, open-source JetBrains IDE plugin that transforms your local Git history into a beautiful, shareable developer personality card.
@@ -34,7 +36,22 @@ It is a fun summary of commit activity—not a score, performance review, or mea
 
 ## Installation
 
-Dev Wrapped has not yet been published on JetBrains Marketplace. Build and install the current development version locally:
+Dev Wrapped 0.1.2 is an approved JetBrains Marketplace beta. The plugin is currently hidden from regular Marketplace search, so use the direct link or add its Beta repository.
+
+### Install the Marketplace beta
+
+1. Open the [Dev Wrapped Marketplace page](https://plugins.jetbrains.com/plugin/35069-dev-wrapped).
+2. In your JetBrains IDE, open **Settings → Plugins**, select the gear menu, and choose **Manage Plugin Repositories…**.
+3. Add the [Dev Wrapped Beta repository](https://plugins.jetbrains.com/plugins/beta/35069):
+
+   ```text
+   https://plugins.jetbrains.com/plugins/beta/35069
+   ```
+
+4. Return to the **Marketplace** tab, search for **Dev Wrapped**, and click **Install**.
+5. Restart the IDE if prompted.
+
+### Build and install from source
 
 1. Clone or download the source from the intended repository: [github.com/msuranek/dev-wrapped](https://github.com/msuranek/dev-wrapped).
 2. Install JDK 21 and Git.
@@ -48,7 +65,7 @@ Dev Wrapped has not yet been published on JetBrains Marketplace. Build and insta
 5. In your JetBrains IDE, open **Settings → Plugins**, select the gear menu, choose **Install Plugin from Disk…**, and select the ZIP.
 6. Restart the IDE when prompted.
 
-The plugin descriptor requires IntelliJ Platform build **252 (2025.2)** or later. Development currently targets IntelliJ IDEA Community 2025.2.4. Manual release verification in both IntelliJ IDEA and PhpStorm remains required before Marketplace publication.
+The plugin descriptor requires IntelliJ Platform build **252 (2025.2)** or later. Plugin Verifier has reported compatibility with IntelliJ IDEA Community 2025.2.4 and PhpStorm 2025.3.2. Marketplace installation and the core analysis-to-card flow have been manually tested in PhpStorm 2025.3.2 on macOS. Manual IntelliJ IDEA testing remains outstanding.
 
 ## Usage
 
@@ -91,7 +108,7 @@ Common commands:
 ./gradlew runIde
 ```
 
-`./gradlew verifyPlugin` checks the current IntelliJ IDEA target without downloading another IDE. To include an existing PhpStorm installation, set `PHPSTORM_HOME` to that installation before running the task. The full release process is documented in [docs/RELEASE_CHECKLIST.md](docs/RELEASE_CHECKLIST.md).
+`./gradlew verifyPlugin` checks the current IntelliJ IDEA target without downloading another IDE. To include an existing PhpStorm installation, set `PHPSTORM_HOME` to that installation before running the task. The full release process is documented in [docs/RELEASING.md](docs/RELEASING.md).
 
 ## Architecture
 
@@ -115,6 +132,8 @@ Common commands:
 ## Contributing
 
 Dev Wrapped is at an early stage, and focused contributions are welcome. Before opening a pull request, run the tests, keep the privacy-first design intact, and avoid expanding the plugin into productivity scoring or remote data collection. Issues and pull requests belong in the intended [GitHub repository](https://github.com/msuranek/dev-wrapped).
+
+Beta feedback is especially useful. The [beta testing guide](docs/BETA_TESTING.md) contains a focused smoke-test checklist and privacy-safe reporting instructions. Report problems through the [GitHub issue tracker](https://github.com/msuranek/dev-wrapped/issues).
 
 ## License
 

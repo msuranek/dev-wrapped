@@ -7,12 +7,19 @@ out/
 
 # IDE and editor-local files
 .idea/
+.vscode/
+.fleet/
+.run/
 *.iml
 *.ipr
 *.iws
+*.code-workspace
 *.swp
 *.swo
 *~
+*.bak
+*.orig
+*.rej
 
 # Operating-system metadata
 .DS_Store
@@ -41,5 +48,8 @@ credentials.properties
 logs/
 *.tmp
 *.temp
+*.hprof
+*.pid
+*.stackdump
 hs_err_pid*
 replay_pid*

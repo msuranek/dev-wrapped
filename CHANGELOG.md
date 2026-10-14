@@ -2,13 +2,15 @@
 
 All notable changes to Dev Wrapped will be documented here.
 
-The project follows the structure of [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). The versions below are development milestones; none is claimed here as a published JetBrains Marketplace release.
+The project follows the structure of [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Version 0.1.2 is the first approved JetBrains Marketplace beta; earlier versions were development builds.
 
 ## [Unreleased]
 
 No unreleased changes.
 
-## [0.1.2] — Beta release candidate
+## [0.1.2] — 2026-10-13 Marketplace Beta
+
+Approved and distributed through the JetBrains Marketplace Beta channel while the plugin remains hidden from regular Marketplace search.
 
 ### Added
 
@@ -27,7 +29,7 @@ No unreleased changes.
 - Improved the lower portion of the card and replaced the generic DNA decoration with archetype-specific artwork.
 - Updated achievement copy to avoid repeating archetype subtitles and to describe commit activity without implying measured working hours or productivity.
 - Regenerated the README preview using fictional Midnight Architect sample data and the same renderer as the plugin.
-- Polished the README, Marketplace copy, changelog, and release checklist for the initial public GitHub launch.
+- Polished the README, Marketplace copy, changelog, and release documentation for the initial public GitHub launch.
 
 ### Fixed
 
