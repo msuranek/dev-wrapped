@@ -6,7 +6,7 @@ import com.intellij.icons.AllIcons
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.ui.ComboBox
 import com.intellij.openapi.ui.DialogWrapper
-import com.intellij.ui.SimpleListCellRenderer
+import com.intellij.ui.ColoredListCellRenderer
 import com.intellij.ui.components.JBLabel
 import com.intellij.ui.dsl.builder.AlignX
 import com.intellij.ui.dsl.builder.panel
@@ -14,6 +14,8 @@ import com.intellij.util.ui.JBUI
 import java.nio.file.Path
 import javax.swing.DefaultComboBoxModel
 import javax.swing.JComponent
+import javax.swing.JList
+import javax.swing.ListCellRenderer
 
 class DevWrappedDialog(
     project: Project,
@@ -36,8 +38,8 @@ class DevWrappedDialog(
     init {
         title = "Generate Dev Wrapped"
         setOKButtonText("Generate My Dev Wrapped")
-        identityBox.renderer = SimpleListCellRenderer.create("No active identities") { it.displayName }
-        periodBox.renderer = SimpleListCellRenderer.create("") { it.displayName }
+        identityBox.renderer = textRenderer("No active identities") { it.displayName }
+        periodBox.renderer = textRenderer("") { it.displayName }
         periodBox.selectedItem = controller.currentPeriod
         refreshIdentities(controller.initialSelection())
 
@@ -90,4 +92,17 @@ class DevWrappedDialog(
         border = JBUI.Borders.emptyTop(8)
         preferredSize = java.awt.Dimension(JBUI.scale(620), preferredSize.height)
     }
+
+    private fun <T> textRenderer(nullValue: String, textExtractor: (T) -> String): ListCellRenderer<T> =
+        object : ColoredListCellRenderer<T>() {
+            override fun customizeCellRenderer(
+                list: JList<out T>,
+                value: T?,
+                index: Int,
+                selected: Boolean,
+                hasFocus: Boolean,
+            ) {
+                append(value?.let(textExtractor) ?: nullValue)
+            }
+        }
 }

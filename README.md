@@ -4,7 +4,7 @@
 
 [![Build](https://github.com/msuranek/dev-wrapped/actions/workflows/build.yml/badge.svg)](https://github.com/msuranek/dev-wrapped/actions/workflows/build.yml)
 
-**Marketplace Beta:** [Dev Wrapped 0.1.2 on JetBrains Marketplace](https://plugins.jetbrains.com/plugin/35069-dev-wrapped)
+**Marketplace Beta:** [Dev Wrapped on JetBrains Marketplace](https://plugins.jetbrains.com/plugin/35069-dev-wrapped)
 
 ## Your Git history has a personality. Discover yours.
 
@@ -36,7 +36,7 @@ It is a fun summary of commit activity—not a score, performance review, or mea
 
 ## Installation
 
-Dev Wrapped 0.1.2 is an approved JetBrains Marketplace beta. The plugin is currently hidden from regular Marketplace search, so use the direct link or add its Beta repository.
+Dev Wrapped is distributed through an approved JetBrains Marketplace beta listing. The plugin is currently hidden from regular Marketplace search, so use the direct link or add its Beta repository.
 
 ### Install the Marketplace beta
 

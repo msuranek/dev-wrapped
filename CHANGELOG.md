@@ -8,6 +8,12 @@ The project follows the structure of [Keep a Changelog](https://keepachangelog.c
 
 No unreleased changes.
 
+## [0.1.3] — 2026-11-10 Beta
+
+### Fixed
+
+- Replaced the scheduled-for-removal list-cell renderer API with the current IntelliJ Platform UI DSL renderer.
+
 ## [0.1.2] — 2026-10-13 Marketplace Beta
 
 Approved and distributed through the JetBrains Marketplace Beta channel while the plugin remains hidden from regular Marketplace search.

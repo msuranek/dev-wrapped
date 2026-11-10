@@ -11,7 +11,7 @@ Thank you for testing Dev Wrapped. A focused smoke test should take about 10 min
    https://plugins.jetbrains.com/plugins/beta/35069
    ```
 
-3. Return to the **Marketplace** tab, search for **Dev Wrapped**, and install version 0.1.2.
+3. Return to the **Marketplace** tab, search for **Dev Wrapped**, and install the latest available beta.
 4. Restart the IDE if prompted.
 
 The beta requires a JetBrains IDE based on IntelliJ Platform 2025.2 or later and a system Git executable available on `PATH`.
