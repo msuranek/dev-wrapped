@@ -4,7 +4,7 @@
 
 [![Build](https://github.com/msuranek/dev-wrapped/actions/workflows/build.yml/badge.svg)](https://github.com/msuranek/dev-wrapped/actions/workflows/build.yml)
 
-**Marketplace Beta:** [Dev Wrapped on JetBrains Marketplace](https://plugins.jetbrains.com/plugin/35069-dev-wrapped)
+**JetBrains Marketplace:** [Install Dev Wrapped](https://plugins.jetbrains.com/plugin/35069-dev-wrapped)
 
 ## Your Git history has a personality. Discover yours.
 
@@ -36,20 +36,14 @@ It is a fun summary of commit activity—not a score, performance review, or mea
 
 ## Installation
 
-Dev Wrapped is distributed through an approved JetBrains Marketplace beta listing. The plugin is currently hidden from regular Marketplace search, so use the direct link or add its Beta repository.
+Dev Wrapped is distributed through the JetBrains Marketplace for compatible IDEs based on IntelliJ Platform 2025.2 or later.
 
-### Install the Marketplace beta
+### Install from JetBrains Marketplace
 
 1. Open the [Dev Wrapped Marketplace page](https://plugins.jetbrains.com/plugin/35069-dev-wrapped).
-2. In your JetBrains IDE, open **Settings → Plugins**, select the gear menu, and choose **Manage Plugin Repositories…**.
-3. Add the [Dev Wrapped Beta repository](https://plugins.jetbrains.com/plugins/beta/35069):
-
-   ```text
-   https://plugins.jetbrains.com/plugins/beta/35069
-   ```
-
-4. Return to the **Marketplace** tab, search for **Dev Wrapped**, and click **Install**.
-5. Restart the IDE if prompted.
+2. In your JetBrains IDE, open **Settings → Plugins → Marketplace**.
+3. Search for **Dev Wrapped** and click **Install**.
+4. Restart the IDE if prompted.
 
 ### Build and install from source
 
@@ -133,7 +127,7 @@ Common commands:
 
 Dev Wrapped is at an early stage, and focused contributions are welcome. Before opening a pull request, run the tests, keep the privacy-first design intact, and avoid expanding the plugin into productivity scoring or remote data collection. Issues and pull requests belong in the intended [GitHub repository](https://github.com/msuranek/dev-wrapped).
 
-Beta feedback is especially useful. The [beta testing guide](docs/BETA_TESTING.md) contains a focused smoke-test checklist and privacy-safe reporting instructions. Report problems through the [GitHub issue tracker](https://github.com/msuranek/dev-wrapped/issues).
+Feedback is welcome. The [testing guide](docs/BETA_TESTING.md) contains a focused smoke-test checklist and privacy-safe reporting instructions. Report problems through the [GitHub issue tracker](https://github.com/msuranek/dev-wrapped/issues).
 
 ## License
 

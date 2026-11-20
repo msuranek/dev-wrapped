@@ -8,6 +8,14 @@ The project follows the structure of [Keep a Changelog](https://keepachangelog.c
 
 No unreleased changes.
 
+## [0.1.4] — 2026-11-20 Stable
+
+First release prepared for the default JetBrains Marketplace channel and public availability.
+
+### Changed
+
+- Promoted the verified 0.1.3 beta codebase to the first stable release without changing analytics, classification, rendering, or export behavior.
+
 ## [0.1.3] — 2026-11-10 Beta
 
 ### Fixed
